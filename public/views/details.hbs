@@ -1,0 +1,51 @@
+{{> header pageTitle="SECA" class="header"}}
+<header class="headerAllGroups">
+    <form method="POST" action="/site/signOut">
+        <input type="submit" value="Sign Out">
+    </form>
+    <span> | </span>
+    <form method = "GET" action = "/site/auth/home">
+        <input type="submit" value="All Groups">
+    </form>
+</header>
+
+
+<form class="container" method="POST" action="/site/auth/home/update">
+  <h3>Update Group</h3>
+  <p>Name: <input type="text" value="{{group.name}}" name="groupName" maxlength="15"></p>
+  <p>Description: <input type="text" value="{{group.description}}" name="groupDescription" maxlength="80"></p>
+    <input type="hidden" value="{{group.groupId}}" name="groupId">
+    <button type="submit">Update</button>
+</form>
+
+<hr>
+
+<div class="details-buttons">
+<form  method="POST" action='/site/auth/home/delete'>
+    <input type="hidden" value="{{group.groupId}}" name="groupId">
+  <input type="submit" value="Delete Group">
+</form>
+
+<form  method="GET" action='/site/auth/home/showEvents'>
+    <input type="hidden" value="{{group.groupId}}" name="groupId">
+  <input type="submit" value="Add Event">
+</form>
+</div>
+<section class="sectionMain">
+  {{#each group.events}}
+    <section class="add-event-form">
+      <h3>{{this.name}}</h3>
+            <p>Data: {{this.date}}</p>
+            <p>Gênero: {{this.genre}}</p>
+            <p>Sub-Gênero: {{this.subGenre}}</p>
+            <p>Segmento: {{this.segment}}</p>
+            <p>Vendas: {{this.sales}}</p>
+            <div class="event-image-container">
+              <img src="{{this.image}}" alt="" class="event-image">
+            </div>
+        <div class="add-to-group-container">
+          {{> deleteEvent eventId=this.id userId=../userId groupId=../group.groupId}}
+      </div>
+    </section>
+  {{/each}}
+</section>

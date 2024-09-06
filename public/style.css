@@ -1,0 +1,382 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 20px;
+  color: #333;
+  background-color: #4caf50; 
+  padding: 10px; 
+  border-radius: 4px; 
+  text-align: center; 
+  line-height: 1.5; 
+}
+
+p {
+  margin: 10px 0;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+
+button {
+  display: block; 
+  margin: 0 auto; 
+  background-color: #4caf50;
+  color: #333;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+
+.navigation {
+  margin-top: 20px;
+}
+
+.navigation a {
+  color: #333;
+  text-decoration: none;
+  padding: 10px 15px;
+  margin: 0 10px;
+  border-radius: 4px;
+  background-color: #eee;
+  transition: background-color 0.3s ease;
+}
+
+.navigation a:hover {
+  background-color: #ddd;
+  color: #555;
+}
+
+
+.headerAllGroups {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.headerAllGroups form {
+  display: inline-block;
+}
+
+.headerAllGroups a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.headerAllGroups input {
+  display: inline;
+  color: #fff;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.headerAllGroups span {
+  color: #fff;
+  margin: 0 5px;
+}
+
+.createGroupDiv {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+hr {
+  border: 1px solid #ddd;
+  margin: 20px 0;
+}
+
+.sectionMain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.groupSection,
+.groupHeader {
+    width: 200px; 
+    height: 100px;
+}
+
+  .groupSection {
+  width: 200px;
+  background-color: #333;
+  padding: 20px;
+  margin: 5px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.groupSection:hover {
+  transform: scale(1.05);
+}
+
+.groupHeader {
+  margin-bottom: 15px;
+ 
+}
+
+.groupHeader h1 {
+  font-size: 18px;
+  margin: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+.groupHeader p {
+  margin: 10px 0;
+  color: #bdbaba;
+  word-wrap: break-word;
+}
+
+.detailsButton {
+  background-color: #4caf50;
+  color: #333;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.detailsButton:hover {
+  background-color: #45a049;
+}  
+
+.groupLink {
+  text-decoration: none; 
+  color: inherit; 
+  cursor: pointer; 
+}
+
+.groupLink:hover .groupSection {
+  background-color: #282828af;
+}
+
+.details-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px; 
+}
+
+.details-buttons form {
+  text-align: center;
+  flex: 1; 
+}
+
+.details-buttons input[type="submit"] {
+  background-color: #4caf50;
+  color: #333;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%; 
+  margin: 5px 0; 
+}
+
+.details-buttons input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+
+/*adrhadh*/
+.button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+.btn-primary {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.btn-primary:hover {
+  background-color: #45a049;
+}
+
+
+.add-event-form {
+  max-width: 400px;
+  margin: 20px auto;
+  background-color: #f4f4f4d4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-event-form strong {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.add-event-form p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.add-event-form .event-image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.add-event-form .event-image {
+  width: 200px;    
+  height: 150px;   
+  object-fit: cover; 
+  border-radius: 4px;
+  margin: 10px 0;   
+}
+
+.add-event-form .add-to-group-container {
+  display: flex;
+  justify-content: center;
+}
+
+.add-event-form input[type="submit"] {
+  background-color: #4caf50;
+  color: #333;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-event-form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.page-buttons {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.page-buttons a {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 0 5px;
+  text-decoration: none;
+  color: #333;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.page-buttons a.button {
+  background-color: #4caf50;
+}
+
+.page-buttons .pagination-buttons {
+  display: flex;
+  margin-top: 10px;
+}
+
+.page-buttons .pagination-buttons a {
+  flex-grow: 1;
+}
+
+.page-buttons a.btn-primary {
+  background-color: #4caf50;
+}
+
+.page-buttons a:hover {
+  background-color: #45a049;
+}
+
+/*.page-buttons input[type="submit"],*/
+/*.page-buttons a {*/
+/*  display: inline-block;*/
+/*  padding: 10px 15px;*/
+/*  margin: 0 5px;*/
+/*  text-decoration: none;*/
+/*  color: #333;*/
+/*  border-radius: 4px;*/
+/*  transition: background-color 0.3s ease;*/
+/*}*/
+
+/*.page-buttons input[type="submit"].button,*/
+/*.page-buttons a.button {*/
+/*  background-color: #4caf50;*/
+/*}*/
+
+/*.page-buttons .pagination-buttons {*/
+/*  display: flex;*/
+/*  justify-content: space-between;*/
+/*  margin-top: 10px;*/
+/*}*/
+
+/*.page-buttons .pagination-buttons input[type="submit"] {*/
+/*  flex-grow: 1;*/
+/*}*/
+
+
